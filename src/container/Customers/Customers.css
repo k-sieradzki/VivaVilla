@@ -1,0 +1,23 @@
+.customers .container .clients-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.customers .container .clients-box .client {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 50%;
+}
+
+.customers .container .clients-box .client img {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .customers .container .clients-box .client {
+    width: 132px;
+    height: 132px;
+  }
+}

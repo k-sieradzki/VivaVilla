@@ -1,0 +1,62 @@
+.startnow{
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #D7926B;
+    .container{
+        .text-content{
+            margin: 0 auto;
+            max-width: 80%;
+            h2{
+                font-size: 25px;
+            }
+            p{
+                margin-top: 30px;
+                line-height: 24px;
+            }
+            .big-btn{
+                margin-top: 30px;
+                color: #111;
+                background-color: #fff;
+            }
+            .big-btn::after{
+                border-color: #D7926B;
+            }
+            .big-btn:hover{
+                color: #D7926B;
+                transition: color 0.5s ease;
+            }
+        }
+    }
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .startnow{
+        .container{
+            .text-content{
+                max-width: 70%;
+                h2{
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .startnow{
+        .container{
+            .text-content{
+                h2{
+                    font-size: 35px;
+                }
+                p{
+                    margin: 30px auto 0;
+                    max-width: 70%;
+                }
+            }
+        }
+    }
+}
