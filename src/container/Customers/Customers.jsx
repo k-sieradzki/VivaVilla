@@ -1,40 +1,41 @@
 import React from 'react';
-
 import images from '../../constants/images';
-import './Customers.scss';
+
+import styles from './Customers.module.scss'
+
 
 const Customers = () => {
 	return (
-		<section className='customers'>
-			<div className='container'>
-				<div className='clients-box'>
-					<div className='client'>
-						<div className='box'>
+		<section className={styles.customers}>
+			<div className={styles.container}>
+				<div className={styles.clientsBox}>
+					<div className={styles.client}>
+						<div className={styles.box}>
 							<img src={images.real1} alt='brand name' />
 						</div>
 					</div>
-					<div className='client'>
-						<div className='box'>
+					<div className={styles.client}>
+						<div className={styles.box}>
 							<img src={images.real2} alt='brand name' />
 						</div>
 					</div>
-					<div className='client'>
-						<div className='box'>
+					<div className={styles.client}>
+						<div className={styles.box}>
 							<img src={images.real3} alt='brand name' />
 						</div>
 					</div>
-					<div className='client'>
-						<div className='box'>
+					<div className={styles.client}>
+						<div className={styles.box}>
 							<img src={images.real4} alt='brand name' />
 						</div>
 					</div>
-					<div className='client'>
-						<div className='box'>
+					<div className={styles.client}>
+						<div className={styles.box}>
 							<img src={images.real5} alt='brand name' />
 						</div>
 					</div>
-					<div className='client'>
-						<div className='box'>
+					<div className={styles.client}>
+						<div className={styles.box}>
 							<img src={images.real6} alt='brand name' />
 						</div>
 					</div>

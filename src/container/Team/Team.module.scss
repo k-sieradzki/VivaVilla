@@ -1,0 +1,177 @@
+.team {
+	padding: 120px 0px;
+}
+.container {
+	position: relative;
+	padding: 20px;
+}
+.teamSliderBox {
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+.swiperPerson {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	cursor: grabbing;
+	img {
+		display: block;
+		height: auto;
+		width: 100%;
+		transform: scale(1);
+		transition: transform 0.3s ease;
+	}
+}
+.swiperOver {
+	display: none;
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0 20px;
+	background-color: rgba(1, 1, 1, 0.7);
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.links {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 50%;
+	transform: translateY(-50%);
+	a {
+		padding: 10px 0;
+		font-size: 18px;
+		color: #fff;
+	}
+	a:hover {
+		color: #d7926b;
+	}
+}
+
+.name {
+	position: absolute;
+	bottom: 0px;
+	transition: bottom 0.5s ease;
+	p {
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #d7926b;
+		margin-bottom: 5px;
+	}
+	h3 {
+		color: #fff;
+	}
+}
+
+.swiperPerson:hover {
+	img {
+		transform: scale(1.1);
+		transition: transform 0.3s ease;
+	}
+	.swiperOver {
+		opacity: 1;
+		transition: opacity 0.5s ease;
+		.name {
+			bottom: 30px;
+			transition: bottom 0.5s ease;
+		}
+	}
+}
+
+.teamPrev,
+.teamNext {
+	display: none;
+	position: absolute;
+	top: 50%;
+	border: none;
+	background-color: transparent;
+	font-size: 40px;
+	cursor: pointer;
+	transition: color 0.3s ease;
+}
+
+.teamPrev:hover,
+.teamNext:hover {
+	color: #d7926b;
+	transition: color 0.3s ease;
+}
+
+.teamPrev {
+	left: -20px;
+}
+.teamPrev::before,
+.teamNext::after {
+	position: absolute;
+	content: '';
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid #615e5e;
+	opacity: 0.5;
+}
+.teamPrev::before {
+	left: -10px;
+}
+
+.teamNext {
+	right: -20px;
+}
+.teamNext::after {
+	right: -10px;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+.teamSwiper {
+	overflow: visible;
+}
+.swiperPagination {
+	bottom: -30px !important;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 30px !important;
+}
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 560px;
+	}
+	.swiperOver {
+		display: block;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 760px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+	.team {
+		text-align: center;
+	}
+}
+
+@media (min-width: 1360px) {
+	.container {
+		max-width: 1330px;
+	}
+	.teamNext,
+	.teamPrev {
+		display: flex;
+	}
+}

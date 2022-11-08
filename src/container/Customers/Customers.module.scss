@@ -1,0 +1,21 @@
+.clientsBox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.client {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	width: 50%;
+	img {
+		width: 100%;
+	}
+}
+
+@media (min-width: 576px) {
+	.client {
+		width: 132px;
+		height: 132px;
+	}
+}

@@ -10,37 +10,37 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import './Team.scss';
-
+//import './Team.css';
+import styles from './Team.module.scss'
 import { Pagination, Navigation } from 'swiper';
 import images from '../../constants/images';
 
 const Team = () => {
 	return (
-		<section className='team' id='team'>
-			<div className='container'>
-				<div className='text-content'>
+		<section className={styles.team} id='team'>
+			<div className={styles.container}>
+				<div className={styles.textContent}>
 					<TextHead title={'professionals'} desc={'Our Team'} />
 				</div>
 
-				<button className='team-prev'><CgArrowLongLeft/></button>
-				<button className='team-next'><CgArrowLongRight/></button>
+				<button className={`teamPrev ${styles.teamPrev}`}><CgArrowLongLeft/></button>
+				<button className={`teamNext ${styles.teamNext}`}><CgArrowLongRight/></button>
 
-				<div className='team-slider-box'>
+				<div className={styles.teamSliderBox}>
 					<>
 						<Swiper
 							loop={true}
 							slidesPerView={2}
 							spaceBetween={30}
 							navigation={{
-								prevEl: '.team-prev',
-								nextEl: '.team-next',
+								prevEl: '.teamPrev',
+								nextEl: '.teamNext',
 							}}
 							pagination={{
 								clickable: true,
 							}}
 							modules={[Pagination, Navigation]}
-							className='mySwiper team-swiper'
+							className={`${styles.mySwiper} ${styles.teamSwiper}`}
 							breakpoints={{
 								992: {
 									slidesPerView: 3,
@@ -50,61 +50,61 @@ const Team = () => {
 								},
 							}}
 						>
-							<SwiperSlide className='swiper-person'>
+							<SwiperSlide className={styles.swiperPerson}>
 								<img src={images.team1} alt='' />
-								<div className="swiper-over">
-									<div className="links">
+								<div className={styles.swiperOver}>
+									<div className={styles.links}>
 										<a href="#0"><FaFacebookF/></a>
 										<a href="#0"><FaTwitter/></a>
 										<a href="#0"><FaInstagram/></a>
 										<a href="#0"><FaLinkedinIn/></a>
 									</div>
-									<div className="name">
+									<div className={styles.name}>
 										<p>interior design</p>
 										<h3>Jenny Willson</h3>
 									</div>
 								</div>
 							</SwiperSlide >
-							<SwiperSlide className='swiper-person'>
+							<SwiperSlide className={styles.swiperPerson}>
 								<img src={images.team2} alt='' />
-								<div className="swiper-over">
-									<div className="links">
+								<div className={styles.swiperOver}>
+									<div className={styles.links}>
 										<a href="#0"><FaFacebookF/></a>
 										<a href="#0"><FaTwitter/></a>
 										<a href="#0"><FaInstagram/></a>
 										<a href="#0"><FaLinkedinIn/></a>
 									</div>
-									<div className="name">
+									<div className={styles.name}>
 										<p>interior design</p>
 										<h3>Max Willson</h3>
 									</div>
 								</div>
 							</SwiperSlide>
-							<SwiperSlide className='swiper-person'>
+							<SwiperSlide className={styles.swiperPerson}>
 								<img src={images.team3} alt='' />
-								<div className="swiper-over">
-									<div className="links">
+								<div className={styles.swiperOver}>
+									<div className={styles.links}>
 										<a href="#0"><FaFacebookF/></a>
 										<a href="#0"><FaTwitter/></a>
 										<a href="#0"><FaInstagram/></a>
 										<a href="#0"><FaLinkedinIn/></a>
 									</div>
-									<div className="name">
+									<div className={styles.name}>
 										<p>interior design</p>
 										<h3>Alice Willson</h3>
 									</div>
 								</div>
 							</SwiperSlide>
-							<SwiperSlide className='swiper-person'>
+							<SwiperSlide className={styles.swiperPerson}>
 								<img src={images.team4} alt='' />
-								<div className="swiper-over">
-									<div className="links">
+								<div className={styles.swiperOver}>
+									<div className={styles.links}>
 										<a href="#0"><FaFacebookF/></a>
 										<a href="#0"><FaTwitter/></a>
 										<a href="#0"><FaInstagram/></a>
 										<a href="#0"><FaLinkedinIn/></a>
 									</div>
-									<div className="name">
+									<div className={styles.name}>
 										<p>interior design</p>
 										<h3>John Willson</h3>
 									</div>

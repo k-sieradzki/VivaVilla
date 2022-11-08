@@ -1,8 +1,10 @@
 import React from 'react';
 
 import { About, Blog, Counter, Customers, Footer, Header, Navbar, Portfolio, Services, Skills, Startnow, Team} from './container';
-import './App.scss';
+import './App.css';
 import "swiper/css/bundle";
+
+import styles from './App.module.scss'
 
 const App = () => (
   <div>

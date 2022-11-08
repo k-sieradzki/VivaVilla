@@ -1,12 +1,10 @@
 import React from 'react'
-
-import './TextHead.scss'
-
+import styles from './TextHead.module.scss'
 
 const TextHead = ({title, desc}) => {
   return (
-    <div className='text-head'>
-        <p className='head-title'>{title}</p>
+    <div className={styles.textHead}>
+        <p className={styles.headTitle}>{title}</p>
         <h2>{desc}</h2>
     </div>
   )

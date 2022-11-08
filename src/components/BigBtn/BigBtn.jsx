@@ -1,10 +1,10 @@
 import React from 'react'
 
-import './BigBtn.scss'
+import styles from './BigBtn.module.scss'
 
-const BigBtn = ({title}) => {
+const BigBtn = ({title, newColor}) => {
   return (
-    <button className='big-btn'>{title}</button>
+    <button className={`${styles.bigBtn} ${styles[newColor]}`}>{title}</button>
   )
 }
 

@@ -1,10 +1,10 @@
 import React from 'react';
-import './SmallBtn.scss'
+import styles from './SmallBtn.module.scss'
 
-const SmallBtn = ({btnTitle}) => {
+const SmallBtn = ({btnTitle, newColor}) => {
 	return (
-		<div className='btn-small'>
-			<a href='#0'> {btnTitle}</a>
+		<div className={styles.btnSmall}>
+			<a className={`${styles.btnInSmall} ${styles[newColor]}`} href='#0'> {btnTitle}</a>
 		</div>
 	);
 };

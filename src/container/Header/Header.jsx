@@ -4,8 +4,9 @@ import images from '../../constants/images';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
 
-import './Header.scss';
 import { SmallBtn } from '../../components';
+import styles from './Header.module.scss'
+
 
 const Header = () => {
 	return (
@@ -16,15 +17,15 @@ const Header = () => {
 					clickable: true,
 				}}
 				modules={[Pagination]}
-				className='mySwiper'
+				className={styles.mySwiper}
 			>
 					<SwiperSlide>
-						<div className='slider-image'>
+						<div className={styles.sliderImage}>
 							<img src={images.slider1} alt='house1' />
-							<div className="slider-overlay"></div>
+							<div className={styles.sliderOverlay}></div>
 						</div>
-						<div className='slider-textbox'>
-							<div className='slider-text'>
+						<div className={styles.sliderTextbox}>
+							<div className={styles.sliderText}>
 								<h1>The House of The<br/><span>Narraive Art</span>
 								</h1>
 							</div>
@@ -33,12 +34,12 @@ const Header = () => {
 					</SwiperSlide>
 
 					<SwiperSlide>
-						<div className='slider-image'>
+						<div className={styles.sliderImage}>
 							<img src={images.slider2} alt='house2' />
-							<div className="slider-overlay"></div>
+							<div className={styles.sliderOverlay}></div>
 						</div>
-						<div className='slider-textbox'>
-							<div className='slider-text'>
+						<div className={styles.sliderTextbox}>
+							<div className={styles.sliderText}>
 							<h1>Catch Seafood<br/><span>Restaurant</span></h1>
 							</div>
 							<SmallBtn btnTitle={'read more'}/>
@@ -46,12 +47,12 @@ const Header = () => {
 					</SwiperSlide>
 
 					<SwiperSlide>
-						<div className='slider-image'>
+						<div className={styles.sliderImage}>
 							<img src={images.slider3} alt='house3' />
-							<div className="slider-overlay"></div>
+							<div className={styles.sliderOverlay}></div>
 						</div>
-						<div className='slider-textbox'>
-							<div className='slider-text'>
+						<div className={styles.sliderTextbox}>
+							<div className={styles.sliderText}>
 							<h1>Re Future<br/><span>Clinic</span></h1>
 							</div>
 							<SmallBtn btnTitle={'read more'}/>
@@ -59,7 +60,7 @@ const Header = () => {
 					</SwiperSlide>
 			</Swiper>
 			
-			<div className="socials">
+			<div className={styles.socials}>
 							<ul>
 								<li><a href="#0">.Facebook</a></li>
 								<li><a href="#0">.Instagram</a></li>

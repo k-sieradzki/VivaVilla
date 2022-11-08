@@ -1,4 +1,4 @@
-.big-btn{
+.bigBtn{
     position: relative;
     padding: 20px 50px;
     text-transform: uppercase;
@@ -9,7 +9,7 @@
     cursor: pointer;
     transition: color 0.5s ease;
 }
-.big-btn::after{
+.bigBtn::after{
     position: absolute;
     content: '';
     top: 5px;
@@ -20,7 +20,20 @@
     opacity: 0.4;
     transition: opacity 0.5s ease;
 }
-.big-btn:hover:after{
+.bigBtn:hover:after{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+
+.colorWhite{
+    color: #111;
+    background-color: #fff;
+}
+.colorWhite::after{
+    border: 1px solid #D7926B;;
+}
+.colorWhite:hover:after{
     opacity: 1;
     transition: opacity 0.5s ease;
 }
