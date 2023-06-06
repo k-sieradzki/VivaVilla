@@ -1,6 +1,6 @@
 # VivaVilla
 
-VivaVilla - landing page template - built with React library using CSS Modules and Swiper.js. The page has been created using responsive web design (RWD) techniques.
+VivaVilla - landing page template - built with React library using SCSS Modules and Swiper.js. The page has been created using responsive web design (RWD) techniques.
 
 Live: https://steady-empanada-eff616.netlify.app
 
